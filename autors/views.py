@@ -12,8 +12,8 @@ def autors_list(request):
         context={"autors": autors},
     )
 
-def autors_description(request):
-    autors__ = Autor.objects.all()
+def autors_description(request, id):
+    autors__ = Autor.objects.get(pk=id)
     return render(
         request=request,
         template_name="autor_description.html",
