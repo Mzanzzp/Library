@@ -5,5 +5,5 @@ from django.urls import path
 from books.views import view
 
 urlpatterns = [
-    path('', view),
+    path('', view, name='view'),
 ]
