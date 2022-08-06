@@ -13,7 +13,7 @@ def view(request):
                   )
 
 
-def book_details(request):
+def book_details(request, id):
     details = Book.objects.get(pk=id)
 
     return render(
