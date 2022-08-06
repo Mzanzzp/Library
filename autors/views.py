@@ -5,7 +5,7 @@ from autors.models import Autor
 
 
 def autors_list(request):
-    autors = Autor.object.all()
+    autors = Autor.objects.all()
     return render(
         request=request,
         template_name="autor_list.html",
@@ -13,7 +13,7 @@ def autors_list(request):
     )
 
 def autors_description(request):
-    autors = Autor.object.all()
+    autors = Autor.objects.all()
     return render(
         request=request,
         template_name="autor_description.html",
