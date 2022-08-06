@@ -1,0 +1,29 @@
+[
+{
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+        "title": "hellow",
+        "release_date": "1904-12-08",
+        "author": 1
+    }
+},
+{
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+        "title": "qawewqef",
+        "release_date": "2021-07-14",
+        "author": 2
+    }
+},
+{
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+        "title": "kkk",
+        "release_date": "2022-05-27",
+        "author": 2
+    }
+}
+]

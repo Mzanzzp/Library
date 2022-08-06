@@ -1,0 +1,20 @@
+[
+{
+    "model": "autors.autor",
+    "pk": 1,
+    "fields": {
+        "name": "aaa",
+        "surname": "www",
+        "year_of_birth": "2022-08-06"
+    }
+},
+{
+    "model": "autors.autor",
+    "pk": 2,
+    "fields": {
+        "name": "Adam",
+        "surname": "qqq",
+        "year_of_birth": "2022-06-08"
+    }
+}
+]
