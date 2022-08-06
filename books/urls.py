@@ -6,5 +6,5 @@ from books.views import view, book_details
 
 urlpatterns = [
     path('', view, name='bookview'),
-    path("books/<int:id>", book_details, name="details"),
+    path("<int:id>", book_details, name="details"),
 ]
