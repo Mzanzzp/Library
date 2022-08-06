@@ -8,4 +8,4 @@ class Book(models.Model):
     author = models.ForeignKey(Autor, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"Autor: {self.author} Title: {self.title}"
+        return f"Author: {self.author} Title: {self.title}"
