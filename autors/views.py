@@ -13,10 +13,10 @@ def autors_list(request):
     )
 
 def autors_description(request):
-    autors = Autor.objects.all()
+    autors__ = Autor.objects.all()
     return render(
         request=request,
         template_name="autor_description.html",
-        context={"autors": autors},
+        context={"autors__": autors__},
 
     )
