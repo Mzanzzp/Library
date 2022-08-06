@@ -8,4 +8,4 @@ class Autor(models.Model):
     year_of_birth = models.DateField(null=True, blank=True)
 
     def __str__(self):
-        return f"{self.name} {self.surname} {self.year_of_birth}"
+        return f"{self.name} {self.surname}"

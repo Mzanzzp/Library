@@ -6,4 +6,5 @@ def autors_list(request):
     return render(
         request=request,
         template_name="autor_list.html"
+
     )
