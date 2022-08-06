@@ -43,6 +43,7 @@ INSTALLED_APPS += [
     'books',
     'autors',
     'home',
+    'posts.apps.PostsConfig',
 ]
 
 MIDDLEWARE = [
