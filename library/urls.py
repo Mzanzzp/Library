@@ -23,4 +23,8 @@ urlpatterns = [
     path("autors_description/", include("autors.urls")),
     path('books/', include('books.urls')),
     path('posts/', include('posts.urls')),
+
+    path('__debug__/', include('debug_toolbar.urls')),
+    path('accounts', include('django.contrib.auth.urls')),
+
 ]

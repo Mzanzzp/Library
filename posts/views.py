@@ -25,7 +25,7 @@ def listview(request):
     )
 
 def details(request, post_id):
-    post = Post.object.get(pk=post_id)
+    post = Post.objects.get(pk=post_id)
 
     if request.method == "POST":
 

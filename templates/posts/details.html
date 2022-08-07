@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<form method="POST">
-    {% csrf_token %}
-    <p>
-        <label for="title">Tytuł</label>
-        <input type="text" id="title" name="title" value="{{post.title}}">
-    </p>
-    <p>
-        <textarea id="content" name="content" rows="4" cols="50" placeholder="treść...">{{post.content}}</textarea>
-    </p>
-    <input type="submit" value="send">
-</form>
-</body>
-</html>
+{% block content %}
+  <h1>{{ post.title }}</h1>
+  <small>By: {{ post.author }}</small>
+  <p>{{ post.content }}</p>
+  {% if user == post.author %}
+  {% include 'posts/includes/post_form.html' %}
+  {% endif %}
+{% endblock %}
