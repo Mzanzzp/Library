@@ -1,27 +1,7 @@
-<!--<form method="POST">-->
-<!--  {% csrf_token %}-->
-<!--  <p>-->
-<!--  <label for="title">Tytuł</label>-->
-<!--  <input type="text"-->
-<!--         id="title"-->
-<!--         name="title"-->
-<!--         value="{{ post.title }}"-->
-<!--  >-->
-<!--  </p>-->
-<!--  <p>-->
-<!--     <textarea id="content"-->
-<!--               name="content"-->
-<!--               rows="4"-->
-<!--               cols="50"-->
-<!--               placeholder="treść"-->
-<!--     >{{ post.content }}</textarea>-->
-<!--  </p>-->
-
-<!--    <input type="submit" value="send">-->
-<!--  </form>-->
+{% load crispy_forms_tags %}
 
 <form method="POST">
   {% csrf_token %}
-  {{ post_form.as_p }}
+  {{ post_form|crispy }}
   <input type="submit" value="send" name="post_submit">
 </form>

@@ -9,3 +9,7 @@ class Autor(models.Model):
 
     def __str__(self):
         return f"{self.name} {self.surname}"
+
+# class Bio(models.Model):
+#     autor = models.OneToOneField('authors.Author', on_delete=models.CASCADE )
+#     bio = models.TextField()
