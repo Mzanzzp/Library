@@ -1,0 +1,21 @@
+<!--  <form method="POST">-->
+<!--    {% csrf_token %}-->
+<!--    {{ comment_form.as_p }}-->
+<!--    <input type="submit" value="dodaj" name="'comment_submit">-->
+<!--  </form>-->
+
+<!--  <div>-->
+<!--      {% for c in post.comments.all %}-->
+<!--      <div>-->
+<!--          {{c.content }}-->
+<!--          <br>-->
+<!--          <small>{{c.email}} | {{c.created}}</small>-->
+<!--      </div>-->
+<!--      {% endfor %}-->
+<!--  </div>-->
+<!--  -->
+  <form method="POST">
+  {% csrf_token %}
+  {{ comment_form.as_p }}
+  <input type="submit" value="send" name="comment_submit">
+</form>

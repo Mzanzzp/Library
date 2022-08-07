@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+
 {% block content %}
   <h1>{{ post.title }}</h1>
   <small>By: {{ post.author }}</small>
@@ -5,4 +7,13 @@
   {% if user == post.author %}
   {% include 'posts/includes/post_form.html' %}
   {% endif %}
+
+
+  <form method="POST">
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit" value="dodaj" name="comment_submit">
+  </form>
+
 {% endblock %}
+
