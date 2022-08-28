@@ -6,3 +6,7 @@ django-debug-toolbar==3.5.0
 sqlparse==0.4.2
 tzdata==2022.1
 Pillow
+
+pytest
+pytest-django
+pytest-cov
